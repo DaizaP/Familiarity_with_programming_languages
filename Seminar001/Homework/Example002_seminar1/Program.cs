@@ -13,11 +13,11 @@ Console.WriteLine("Ведите число b");
 int b = int.Parse(Console.ReadLine());
 if (a > b)
 {
-    Console.WriteLine(a);
+    Console.WriteLine($"a = {a}; b = {b} -> max = {a}");
 }
 else
 {
-    Console.WriteLine(b);
+    Console.WriteLine($"a = {a}; b = {b} -> max = {b}");
 }
 // От себя добавил пару вариантов исполнения
 
