@@ -33,3 +33,9 @@ else
 {
     Console.Write("Это не день недели");
 }
+// return 
+//if(day == 1)
+//{
+//    Console.Write("Понедельник");
+//}
+//    return;
