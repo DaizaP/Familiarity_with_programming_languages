@@ -4,7 +4,9 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 Console.Clear();
+
 // ________Вариант1________
+
 Console.WriteLine("Ведите число a");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Ведите число b");
@@ -18,7 +20,9 @@ else
     Console.WriteLine(b);
 }
 // От себя добавил пару вариантов исполнения
+
 //____________Вариант2___________
+
 /* Console.WriteLine("Ведите число a");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Ведите число b");
@@ -52,7 +56,9 @@ else
         }
     }
 } */
+
 // ____________Вариант3(Метод)___________
+
 /* void Comparrison(int a, int b)
 {
     if (a == b)
