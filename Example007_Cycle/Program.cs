@@ -14,9 +14,9 @@ Console.WriteLine("+");
 
 int x = xa, y = xb;
 int count = 0;
-while(count < 10000)
+while (count < 10000)
 {
-    int RandomNumber = new Random() .Next(0, 3);
+    int RandomNumber = new Random().Next(0, 3);
     if (RandomNumber == 0)
     {
         x = (x + xa) / 2;
@@ -25,14 +25,14 @@ while(count < 10000)
 
     if (RandomNumber == 1)
     {
-        x = (x + xb) /2;
-        y = (y + yb) /2;
+        x = (x + xb) / 2;
+        y = (y + yb) / 2;
     }
 
     if (RandomNumber == 2)
     {
-        x = (x + xc) /2;
-        y = (y + yc) /2;   
+        x = (x + xc) / 2;
+        y = (y + yc) / 2;
     }
 
     Console.SetCursorPosition(x, y);
