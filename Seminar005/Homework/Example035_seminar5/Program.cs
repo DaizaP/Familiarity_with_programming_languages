@@ -54,7 +54,7 @@ void AnswerArray(int[] array)// Захотелось в таком виде вы
             Console.Write($"[{String.Join(", ", array)}] -> ");
             break;
         case "n":
-            if (5 >= array.Length)// При выполнении кода все работает корректно, если менять длинну массива. Спросить у преподавателя завтра, почему значение true конструкции if, которая находится в switch case, превращается в false
+            if (5 >= array.Length)
             {
             Console.WriteLine($"Длина массива <= 5. Массив будет выведен полностью;");
             goto case "y";
