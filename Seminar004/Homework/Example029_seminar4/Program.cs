@@ -25,3 +25,15 @@ void CustomRandomArray(int ArrayLength, int min, int max)
 Console.Clear();
 Console.Write("Введите параметры массива (длина массива, минимальное значение, максимальное значение): ");
 CustomRandomArray(int.Parse(Read(", ")), int.Parse(Read(", ")), int.Parse(Console.ReadLine()));
+
+
+// int[] GetRandomArray(int size,int minValue,int maxValue)
+// {
+//     int[] result = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         result[i] = new Random().Next(minValue,maxValue+1);
+//     }
+
+//     return result;
+// }
