@@ -47,7 +47,8 @@ void PrintDoubleArray(double[,] inArray)
 }
 void CheckElementArray(double[,] array, int lines, int columns)
 {
-    if (lines - 1 > array.GetLength(0) || columns - 1 > array.GetLength(1)) WriteLine("В массиве нет такого элемента");
+    if ((lines - 1 > array.GetLength(0) || columns - 1 > array.GetLength(1))||
+        (lines < 0 || columns < 0)) WriteLine("В массиве нет такого элемента");
     else Write("{0,5:F1}", array[lines - 1, columns - 1]);
 }
 
