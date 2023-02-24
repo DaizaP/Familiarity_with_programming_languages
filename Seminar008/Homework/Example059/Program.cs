@@ -33,7 +33,7 @@ void PrintArray(int[,] inArray)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            if (inArray[i,j] == 0){Write($"X ");} // X = null .Для вида
+            if (inArray[i,j] == 0){Write($"X ");} // Для вида
             else{Write($"{inArray[i, j]} ");}
         }
         WriteLine();
