@@ -32,6 +32,7 @@ int[,] GetArray(int lines, int columns)
         {
             if (result[i, j] == 0) { result[i, j] = element; element++; }
         }
+        i = 0; j= 0;
         cycle++;
     }
     return result;
@@ -51,5 +52,5 @@ void PrintArray(int[,] inArray)
         WriteLine();
     }
 }
-int[,] array = GetArray(20, 20);
+int[,] array = GetArray(10, 10);
 PrintArray(array);
