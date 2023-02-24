@@ -12,16 +12,15 @@ int[,] GetArray(int lines, int columns)
     int i = 0, j = 0;
     int element = 1;
     int cycle = 1;
-    int cycle1 = 0;
+
     int[,] result = new int[lines, columns];
     while (element != (lines * columns) + 1)
     {
-        for (i = 0 + i + cycle1, j = 0 + j; j < result.GetLength(0); j++)
+        for (i = i + (cycle - 1), j = j; j < result.GetLength(1); j++)
         {
             if (result[i, j] == 0) { result[i, j] = element; element++; }
         }
-        cycle1 += 2;
-        for (i = i, j = j - (cycle); i < result.GetLength(1); i++)
+        for (i = i, j = j - (cycle); i < result.GetLength(0); i++)
         {
             if (result[i, j] == 0) { result[i, j] = element; element++; }
         }
@@ -45,11 +44,12 @@ void PrintArray(int[,] inArray)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            if (inArray[i, j] >= -1 && inArray[i, j] < 10) { Write($" {inArray[i, j]} "); }// Для красоты
-            else { Write($"{inArray[i, j]} "); }
+            if (inArray[i, j] >= -1 && inArray[i, j] < 10) { Write($"   {inArray[i, j]}"); }// Для красоты
+            else if (inArray[i, j] >= 10 && inArray[i, j] < 100) { Write($"  {inArray[i, j]}"); }
+            else { Write($" {inArray[i, j]}"); }
         }
         WriteLine();
     }
 }
-int[,] array = GetArray(4, 4);
+int[,] array = GetArray(20, 20);
 PrintArray(array);
