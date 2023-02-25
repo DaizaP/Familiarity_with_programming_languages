@@ -103,6 +103,8 @@ void PrintArray(int[,] inArray)
         }
         WriteLine();
     }
+    Thread.Sleep(1000);
+    Clear();
 }
 // [условие] ? [действие при true]:[действие при false]
 int ThorX(int[,] inArray, int lines)
@@ -157,7 +159,7 @@ void LifeOrDeath(int[,] inArray, int age)
     }
 }
 
-Write($"Введите кол-во строк и столбцов для массива и кол-во поколений через Enter: ");
+Write($"Введите кол-во строк и столбцов для массива поколения 0, и кол-во поколений через Enter: ");
 int lines = int.Parse(Read(" "));
 int columns = int.Parse(Read(" "));
 int age = int.Parse(ReadLine());

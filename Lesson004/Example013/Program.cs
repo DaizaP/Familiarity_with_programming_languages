@@ -85,13 +85,21 @@
 // }
 //f(n) = f(n-1) + f(n-2)
 
-int Fibonacci(int n)
+// int Fibonacci(int n)
+// {
+//     if(n ==1 || n ==2) return 1;
+//     else if(n == 0) return 0;
+//     else return Fibonacci(n-1)+ Fibonacci(n-2);
+// }
+// for (int i = 0; i < 50; i++)
+// {
+//     Console.WriteLine($"{i}! = {Fibonacci(i)}");
+// }
+string path = "C:/Users/Дмитрий/Desktop/Обучение";
+DirectoryInfo di =new DirectoryInfo(path);
+Console.WriteLine(di.CreationTime);
+FileInfo[] fi = di.GetFiles();
+for (int i = 0; i < fi.Length; i++)
 {
-    if(n ==1 || n ==2) return 1;
-    else if(n == 0) return 0;
-    else return Fibonacci(n-1)+ Fibonacci(n-2);
-}
-for (int i = 0; i < 50; i++)
-{
-    Console.WriteLine($"{i}! = {Fibonacci(i)}");
+    Console.WriteLine(fi[i].Name);
 }

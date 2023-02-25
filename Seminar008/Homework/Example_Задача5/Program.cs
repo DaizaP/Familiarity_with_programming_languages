@@ -14,7 +14,7 @@ int[,] GetArray(int lines, int columns)
     int cycle = 1;
 
     int[,] result = new int[lines, columns];
-    while (element != (lines * columns) + 1)
+    while (element != (lines * columns)+1)
     {
         for (i = i + (cycle - 1), j = j; j < result.GetLength(1); j++)
         {
